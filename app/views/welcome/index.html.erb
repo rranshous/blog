@@ -1,0 +1,28 @@
+<h1>Welcome#index</h1>
+<p>Find me in app/views/welcome/index.html.erb</p>
+
+
+<% @our_names.each do |name| %> 
+
+	Hello <%= name %>!
+	<br/>
+
+<% end %>
+
+
+<a href="http://oneinchmile.com">Click Here!</a>
+
+<%= link_to('Click Here!', 'http://oneinchmile.com') %>
+
+
+<ul>
+	<li> first thing </li>
+	<li> second thing </li>
+</uL>
+
+
+<ul>
+	<% @things.each do |item| %>
+	  <li> <%= item %> </li>
+	<% end %>
+</ul>

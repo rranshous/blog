@@ -1,4 +1,12 @@
 Blog::Application.routes.draw do
+
+  #get "/" => ""
+  root "welcome#index"
+  get "contact/index"
+  #get "welcome/index"
+  get "welcome" => "welcome#index"
+
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
