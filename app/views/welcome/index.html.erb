@@ -20,9 +20,28 @@
 	<li> second thing </li>
 </uL>
 
+<% if @first_name %>
 
-<ul>
-	<% @things.each do |item| %>
-	  <li> <%= item %> </li>
-	<% end %>
-</ul>
+	<%= @first_name %>
+	<%= @last_name %>
+
+<% else %>
+
+
+	<!-- default submit url, is _this_ url !-->
+	<form method="post" action="/welcome">
+
+	<label>First Name</label>
+	<input type="text" name="firstname">
+	<label>Last Name</label>
+	<input type="text" name="lastname">
+
+	<!-- type="submit" => send to server when pressed !-->
+	<button type="submit">Submit Me!</button>
+
+	<input name="authenticity_token" type="hidden" value="<%= form_authenticity_token() %>" />
+
+<% end %>
+
+
+</form>

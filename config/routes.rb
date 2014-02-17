@@ -1,10 +1,16 @@
 Blog::Application.routes.draw do
 
-  #get "/" => ""
+   #get "/" => ""
   root "welcome#index"
+
   get "contact/index"
   #get "welcome/index"
+  
+  get "welcome/visitor" => "welcome#visitor"
+
   get "welcome" => "welcome#index"
+  # add POST route to new action
+  post "welcome" => "welcome#index"
 
   
   # The priority is based upon order of creation: first created -> highest priority.
