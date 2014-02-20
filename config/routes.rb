@@ -1,5 +1,7 @@
 Blog::Application.routes.draw do
 
+  resources :users
+
    #get "/" => ""
   root "welcome#index"
 
