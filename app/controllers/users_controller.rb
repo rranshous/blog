@@ -26,6 +26,8 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
 
+    # session[:user_name] = @user.name
+
     # @user = User.new({ age: 18, name: 'Robby'})
 
     # @user = User.new

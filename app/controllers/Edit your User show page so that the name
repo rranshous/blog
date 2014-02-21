@@ -1,0 +1,14 @@
+Edit your User show page so that the name
+is larger font and shown at the top of the page
+
+Edit the User form so that Name is the first 
+input (at the top)
+
+Edit the show page so that the first column is name
+
+----
+
+Edit your controller so that it accepts email_address
+in the params
+
+Update your views (_form, index, show) so that email_address is also shown / editable
